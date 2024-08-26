@@ -45,7 +45,7 @@
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #777777;
+  color: #8d9656;
   font-weight: 300;
 }
 
@@ -56,6 +56,9 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+}
+#letrasPie{
+  color: #583326;
 }
 
 ol, ul {
@@ -162,6 +165,16 @@ h6, .h6 {
 
 td, th {
   border-radius: 0px;
+}
+
+mark{
+  color: #8d9656;
+
+  
+}
+strong{
+  color: #8d9656;
+
 }
 
 /**
@@ -1951,9 +1964,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-bg, .primary-btn, .primary-btn2:hover, .single-feature:hover, .video-area .overlay-bg, .single-footer-widget .click-btn, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background-image: -webkit-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background-image: -ms-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  background-image: -moz-linear-gradient(0deg, #8d9656 0%, #7f874d 100%);
+  background-image: -webkit-linear-gradient(0deg,#717845 0%,#8d9656 100%);
+  background-image: -ms-linear-gradient(0deg, #7f874d 0%,#7f874d 100%);
 }
 
 .p1-gradient-color, .counter-left h2, .footer-social a:hover i, .single-footer-widget .bb-btn {
@@ -2104,7 +2117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown-menu {
-  background: #222;
+  background: #8d9656;
   border-radius: 0;
   margin-top: 15px;
   border: none;
@@ -2138,7 +2151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .default-banner h1 {
   color: #222;
-  font-size: 72px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 10px;
@@ -2163,13 +2176,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1199px) {
   .default-banner h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 414px) {
   .default-banner h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -2545,7 +2558,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-area {
   padding-top: 100px;
-  background-color: #222222;
+  background-color: #8d9656;
 }
 
 h6 {
@@ -2688,7 +2701,7 @@ h6 {
 }
 
 .footer-text a, .footer-text i {
-  color: #b01afe;
+  color: #fbcd60;
 }
 
 .whole-wrap {

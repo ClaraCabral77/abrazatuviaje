@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+ 
 }
 
 abbr[title],
@@ -3001,7 +3002,7 @@ tbody.collapse.show {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #8d9656;
   background-color: #fff;
   border-color: #ddd #ddd #fff;
 }
@@ -3048,6 +3049,7 @@ tbody.collapse.show {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: #8d9656 !important;
 }
 
 .navbar > .container,
@@ -7638,10 +7640,10 @@ a.bg-dark:focus, a.bg-dark:hover {
 
 .text-white {
   color: #fff !important;
-  font-size: 15px;
+  font-size: 17px;
 }
 .text-orange {
-  color: orange;
+  color: #fff;
   font-size: 15px;
 }
 

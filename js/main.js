@@ -97,7 +97,7 @@ $('.active-blog-slider').owlCarousel({
         dots: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 4000,
         smartSpeed: 1000,
         animateOut: 'fadeOut',
       })

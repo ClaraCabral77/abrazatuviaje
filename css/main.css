@@ -949,14 +949,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .genric-btn.success {
+  margin-top: 6%;
+  margin-left: 40%;
+  font-size: 15px;
   color: #fff;
-  background: #4cd3e3;
+  background: #b6be44;
   border: 1px solid transparent;
 }
 
 .genric-btn.success:hover {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
+  color: #4b3c06;
+  border: 1px solid #4b3c06;
   background: #fff;
 }
 

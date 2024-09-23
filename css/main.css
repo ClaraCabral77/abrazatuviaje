@@ -1083,7 +1083,7 @@ h1, h2, h3, h4, h5, h6 {
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
-  border-left: 2px solid #b01afe;
+  border-left: 2px solid #b7bb45;
 }
 
 .progress-table-wrap {
@@ -2774,4 +2774,19 @@ h6 {
 
 .switch-wrap p {
   margin: 0;
+}
+
+.lista{
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 5px;
+
+}
+.entusiasmo{
+  text-align: left;
+  padding: 10px;
+
+}
+#mexico{
+  line-height: 2.5;
 }

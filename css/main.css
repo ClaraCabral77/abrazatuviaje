@@ -1970,9 +1970,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-color, .counter-left h2, .footer-social a:hover i, .single-footer-widget .bb-btn {
-  background: -moz-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background: -webkit-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background: -ms-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  background: -moz-linear-gradient(0deg, #fbcd60 0%, #e2b956 100%);
+  background: -webkit-linear-gradient(0deg, #fbcd60 0%, #e2b956 100%);
+  background: -ms-linear-gradient(0deg, #fbcd60 0%, #e2b956 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2492,7 +2492,7 @@ h1, h2, h3, h4, h5, h6 {
 .video-area {
   padding: 200px 0 60px 0;
   position: relative;
-  background: url(../img/video-bg.jpg) no-repeat center center/cover;
+  background: url(../img/evan-krause-bfWJOx132As-unsplash.jpg) no-repeat center center/cover;
 }
 
 .video-area .overlay-bg {

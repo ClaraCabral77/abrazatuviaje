@@ -173,7 +173,7 @@ mark{
   
 }
 strong{
-  color: #8d9656;
+  color: #6b7720;
 
 }
 
@@ -2271,7 +2271,19 @@ h1, h2, h3, h4, h5, h6 {
   .info-area .info-content {
     padding: 30px;
   }
+
+  .genric-btn.success {
+    margin-top: 6%;
+    margin-left: 40%;
+    font-size: 14px;
+    color: #fff;
+    background: #b6be44;
+    border: 5px solid transparent;
+   line-height: 1.5;
+  }
 }
+
+
 
 .info-area .info-content h1 {
   line-height: 1.15em;
@@ -2824,6 +2836,7 @@ del {
 ins {
   background: var(--ins-color, green);
   text-decoration: none;
+  color:#191919;
 }
 
 #fotoSobre{

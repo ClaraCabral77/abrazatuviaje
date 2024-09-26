@@ -2280,6 +2280,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #b6be44;
     border: 5px solid transparent;
    line-height: 1.5;
+   
   }
 }
 
@@ -2846,4 +2847,5 @@ ins {
 .filo{
   font-size: 15px;
 line-height: 1.8;
+margin-top: 30px;
 }

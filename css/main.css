@@ -1913,6 +1913,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
+
+
 @media (max-width: 991px) {
   .main-menubar {
     display: block !important;
@@ -2072,6 +2074,21 @@ h1, h2, h3, h4, h5, h6 {
   width: 100% !important;
 }
 
+.item-slider.relative{
+  background: url(../img/HOME\ NORTE.jpg);
+  background-size: cover;
+}
+.item-slider.segunda{
+  background: url(../img/chichen-itza-3352580_1920.jpg);
+  background-size: cover;
+}
+.item-slider.tercera{
+  background: url(../img/PALMERAS\ HOME.jpg);
+  background-size: cover;
+}
+
+
+
 @media (max-width: 992px) {
   .default-header {
     background-color: #222;
@@ -2187,6 +2204,21 @@ h1, h2, h3, h4, h5, h6 {
   .default-banner h1 {
     font-size: 35px;
   }
+ 
+  .item-slider.relative{
+    background: url(../img/HOME\ NORTE\ movil.png);
+    background-size:cover;
+  }
+  .item-slider.segunda{
+    background: url(../img/chichen-itza-3352580_1920MOVIL.jpg);
+    background-size: cover;
+  }
+  .item-slider.tercera{
+    background: url(../img/PALMERAS\ HOMEMOVIL.jpg);
+    background-size: cover;
+    
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -2236,6 +2268,7 @@ h1, h2, h3, h4, h5, h6 {
   .info-area .info-content {
     margin-top: 30px;
   }
+
 }
 
 .info-area .info-content:after {
@@ -2258,6 +2291,10 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575px) {
   .info-area .info-content:after {
     display: none;
+  }
+  #movil{
+    background: url(../img/CARROUSEL\ LAURA-01.jpg);
+    background-size: 50% 50% ;
   }
 }
 
@@ -2282,6 +2319,11 @@ h1, h2, h3, h4, h5, h6 {
    line-height: 1.5;
    
   }
+ .item-slider{
+  background:  url(../img/CARROUSEL\ LAURA-02.jpg);
+ }
+ 
+
 }
 
 

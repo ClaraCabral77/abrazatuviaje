@@ -59,6 +59,11 @@ body {
 }
 #letrasPie{
   color: #583326;
+
+}
+#letrasPie2{
+  color: #583326;
+font-size: 13px;
 }
 
 ol, ul {
@@ -397,7 +402,9 @@ strong{
 
 .mb-30 {
   margin-bottom: 30px;
+  
 }
+
 
 .mb-40 {
   margin-bottom: 40px;
@@ -1946,7 +1953,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 0px 0;
 }
 
 .section-title {
@@ -2815,15 +2822,26 @@ h6 {
   margin-bottom: 20px;
 }
 
+.about-title{
+  margin-top: 130px;
+}
+
 .white-bg {
   background: #fff;
 }
 
 .section-top-border {
-  padding: 70px 0;
+  padding: 50px 0;
   border-top: 1px dotted #eee;
 }
 
+#fotoYoga{
+margin-top: 5%;
+}
+#pieYoga{
+  margin-top: 30px;
+  line-height: 2.0;
+}
 .switch-wrap {
   margin-bottom: 10px;
 }
@@ -2841,6 +2859,7 @@ h6 {
 .entusiasmo{
   text-align: left;
   padding: 10px;
+  line-height: 2.0;
 
 }
 #mexico{
@@ -2850,7 +2869,7 @@ h6 {
 
 :root {
   --del-color: #fbcd60; 
-  --ins-color: #ddff92;
+  --ins-color: #f1dec6;
 }
 
 

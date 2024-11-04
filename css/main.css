@@ -50,7 +50,7 @@
 }
 
 body {
-  color: #777777;
+  color: #555252;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -620,6 +620,7 @@ strong{
 .text-left {
   text-align: left;
   margin-left: 20px;
+  line-height: 2.5;
   
 
 }
@@ -1202,7 +1203,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 200px;
+  height: 600px;
 }
 
 .list-style {
@@ -2865,6 +2866,8 @@ margin-top: 5%;
   padding-bottom: 10px;
   padding-top: 5px;
  margin-left: 60px;
+ line-height: 2.0;
+
  
 
 }
@@ -2875,7 +2878,7 @@ margin-top: 5%;
 
 }
 #mexico{
-  line-height: 2.5;
+  line-height: 2.2;
 }
 
 
@@ -2990,4 +2993,12 @@ margin-top: 30px;
   flex-direction: column;
   color: #3f3d3d;
   font-size: 30px;
+}
+#vidCost{
+  margin-top: 40px;
+
+}
+#costaR{
+  line-height: 2.2;
+  
 }

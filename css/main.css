@@ -1964,6 +1964,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 0;
   padding-bottom: 20px;
 
+
 }
 
 .section-title {
@@ -2350,6 +2351,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 150px;
 
 }
+.entusiasmo{
+  text-align: left;
+  padding: 10px;
+  line-height: 2.0;
+  margin-top: 60px;
+
+}
+#mexico{
+  line-height: 2.2;
+  margin-top: 30px;
+}
+#costaR{
+  line-height: 2.2;
+  margin-top: 30px;
+
+  
+}
+
 
 }
 
@@ -2887,6 +2906,12 @@ margin-top: 5%;
   line-height: 2.0;
 
 }
+.entusiasmx{
+  text-align: left;
+  padding: 10px;
+  line-height: 2.0;
+
+}
 #mexico{
   line-height: 2.2;
 }
@@ -2932,7 +2957,7 @@ ins {
 
 .filo{
   font-size: 15px;
-line-height: 1.8;
+line-height: 1.5;
 margin-top: 30px;
 }
 .ratio.ratio-16x9{
@@ -3011,4 +3036,25 @@ margin-top: 30px;
 #costaR{
   line-height: 2.2;
   
+}
+#secvice{
+  margin-bottom: 100px;
+}
+#faq{
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+#fotoFilo{
+  width: 100%;
+  height: 500px;
+}
+#gallery{
+  margin-bottom: 130px;
+
+}
+#videoL{
+  margin-bottom: 80px;
+}
+#contact{
+  margin-bottom: 80px;
 }

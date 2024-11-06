@@ -60,12 +60,14 @@ body {
   
 }
 #letrasPie{
-  color: #44271d;
+  color: #382018;
+  font-weight: 700px;
+  
 
 }
 #letrasPie2{
   color: #583326;
-font-size: 13px;
+font-size: 11px;
 }
 
 ol, ul {

@@ -1203,7 +1203,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 600px;
+  height: 400px;
 }
 
 .list-style {
@@ -2340,6 +2340,16 @@ h1, h2, h3, h4, h5, h6 {
   background:  url(../img/CARROUSEL\ LAURA-02.jpg);
  }
  
+
+
+ .single-gallery-image {
+  margin-top: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 150px;
+
+}
 
 }
 

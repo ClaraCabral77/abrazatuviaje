@@ -2882,6 +2882,7 @@ h6 {
 .section-top-border {
   padding: 50px 0;
   border-top: 1px dotted #eee;
+  margin-bottom: 40px;
  
 }
 
@@ -3248,3 +3249,16 @@ margin-top: 100px;
               visibility: visible;
           }
       }
+
+    #botonExp{
+  
+        font-size: 16px;
+        color: #fff;
+        background: #b6be44;
+        border: 5px solid transparent;
+      
+      
+      border-radius: 40px;
+      padding: 20px;
+     
+    }

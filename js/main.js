@@ -167,5 +167,5 @@ $('.active-blog-slider').owlCarousel({
 });
 
 $('#carouselExample').carousel({
-  interval: 2000
+  interval: 1500
 });

@@ -2098,15 +2098,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-slider.relative{
-  background: url(../img/HOME\ NORTE.jpg);
+  background: url(../img/HOME-NORTE.webp);
   background-size: cover;
 }
 .item-slider.segunda{
-  background: url(../img/chichen-itza-3352580_1920.jpg);
+  background: url(../img/chichen-itza-3352580_1920.webp);
   background-size: cover;
+
 }
 .item-slider.tercera{
-  background: url(../img/PALMERAS\ HOME.jpg);
+  background: url(../img/PALMERAS-HOME.webp);
   background-size: cover;
 }
 
@@ -3266,12 +3267,13 @@ margin-top: 100px;
       padding-top: 5%;
       padding-left: 5%;
       padding-bottom: 2%s;
-      background-image: url("../img/fondobonus.jpg");
+      background-image: url("../img/fondoguia.jpg");
       background-repeat: no-repeat;
       background-size:cover;
+      background-position: center 50%;
+      margin-bottom: 10px;
 
-
-    }
+}
     @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 :root {
@@ -3295,7 +3297,7 @@ margin-top: 100px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 900;
-  letter-spacing:10px;
+  letter-spacing:2px;
 
   -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
     0px 0px 0.5em 0px var(--glow-color);
@@ -3306,16 +3308,7 @@ margin-top: 100px;
   animation: border-flicker 2s linear infinite;
 }
 
-.glowing-txt {
-  float: left;
-  margin-right: -0.8em;
-  -webkit-text-shadow: 0 0 0.125em hsla(147, 66%, 46%, 0.3),
-    0 0 0.45em var(--glow-color);
-  -moz-text-shadow: 0 0 0.125em hsla(145, 80%, 45%, 0.3),
-    0 0 0.45em var(--glow-color);
-  text-shadow: 0 0 0.125em hsla(152, 75%, 44%, 0.3), 0 0 0.45em var(--glow-color);
-  animation: text-flicker 3s linear infinite;
-}
+
 
 .faulty-letter {
   opacity: 0.5;
@@ -3329,8 +3322,8 @@ margin-top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
+  opacity: 0.5;
+  filter: blur(0.5em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
   background: var(--glow-color);
   pointer-events: none;
@@ -3346,7 +3339,7 @@ margin-top: 100px;
   opacity: 0;
   z-index: -1;
   background-color: var(--glow-color);
-  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  box-shadow: 0 0 1em 1em var(--glow-color);
   transition: opacity 100ms linear;
 }
 
@@ -3493,11 +3486,6 @@ margin-top: 100px;
   --color-quinary: #1dc262;
 }
 
-.contentB {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
 
 .text-shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
@@ -3566,63 +3554,91 @@ margin-top: 100px;
 
 
 
-
-
-
-
-
-
-button {
-	position: relative;
-	font:italic;
-	background-color: #f0f0f0;
-	border: 0;
-	color: #242424;
-	border-radius: 0.5em;
-	font-size: 2rem;
-	padding: 0.375em 1em;
-	font-weight: 400;
-	text-shadow: 0 0.0625em 0 #fff;
-	box-shadow: inset 0 0.0625em 0 0 #121312, 0 0.0625em 0 0 #ec3e3e,
-		0 0.125em 0 0 #fbfffb, 0 0.25em 0 0 #fbfffb, 0 0.3125em 0 0 #d43030,
-		0 0.375em 0 0 #ffffff, 0 0.425em 0 0 #fcfcfc, 0 0.425em 0.5em 0 #eeeeee;
-	transition: 0.25s ease;
-	pointer: cursor;
-	touch-action: manipulation;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	cursor: pointer;
-
-	&:active,
-	&:hover {
-		transform: translateY(0.225em);
-		box-shadow: inset 0 0.03em 0 0 #f03535, 0 0.03em 0 0 #ff5353,
-			0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-			0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
-
-		&:after {
-			height: calc(100% + 0.225em);
-		}
-	}
-
-	&:after {
-		position: absolute;
-		content: "";
-		display: block;
-		width: 100%;
-		height: calc(100% + 0.375em);
-		top: 0;
-		left: 0;
-		background-color: transparent;
-		transition: height 0.25s ease;
-	}
+/* Contenedor para centrar la card en la pantalla */
+.custom-card-container {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  min-height: 100vh;       /* Ocupa toda la altura de la ventana */
 }
-  #myForm2{
-      padding-top: 5%;
-      padding-left: 5%;
-      padding-bottom: 2%s;
-      background-image: url("../img/calendario.jpg");
-      background-repeat: no-repeat;
-      background-size:cover;
+
+/* Card principal */
+.custom-card {
+  width: 620px;                 /* Ancho fijo */
+  height: auto;                 /* Ajusta altura según contenido */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f2e0c9;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.25);
+}
+
+/* Imagen dentro de la card */
+.custom-card img {
+  width: 100%;    /* Ajusta al ancho de la card */
+  height: auto;   /* Mantiene proporción */
+  display: block; /* Evita espacios debajo de la imagen */
+}
+
+/* Contenido de texto sobre la imagen, centrado */
+.custom-card-content {
+  position: absolute;
+  top: 15%;                    /* Separación desde arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;                  /* Margen a los lados */
+  text-align: center;
+  overflow-wrap: break-word;   /* Para cortar palabras largas */
+  word-wrap: break-word;
+  padding: 10px;               /* Espacio interno */
+  box-sizing: border-box;      /* Padding incluido en ancho */
+  color: #3a2f2a;
+}
+
+/* Texto intro */
+.custom-card .intro {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.custom-card .title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Imagen tipo pasaporte dentro de la card */
+.custom-card .passport-img {
+  display: block;
+  margin: 15px auto;
+  width: 90%;
+  border-radius: 5px;
+}
 
 
-    }
+/* Texto pie de página */
+.custom-card .footer-text {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.parrafoRegalo{
+  margin: 60px 80px 80px 80px;
+}
+
+#listaRegalo{
+  margin-top: 30px;
+}
+/* Línea separadora */
+.divider {
+  border: none;               /* Quita borde por defecto */
+  border-top: 2px solid #3a2f2a; /* Línea sólida */
+  margin: 12px auto;          /* Espaciado arriba y abajo */
+  width: 80%;                 /* Largo relativo a la card */
+  opacity: 0.7;               /* Ligera transparencia */
+}

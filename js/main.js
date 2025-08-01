@@ -53,6 +53,7 @@ $(document).ready(function(){
         margin: 100,
         dots: true,
         autoplay:true,
+        lazyLoad: true,
         responsive: {
             0: {
                 items: 1
@@ -72,6 +73,7 @@ $(document).ready(function(){
         dots: true,
         autoplay:true,
         nav:true,
+        lazyLoad: true,
         navText: ["<span class='lnr lnr-arrow-up'></span>",
         "<span class='lnr lnr-arrow-down'></span>"],        
             responsive: {
@@ -100,6 +102,7 @@ $('.active-blog-slider').owlCarousel({
         autoplayTimeout: 4000,
         smartSpeed: 1000,
         animateOut: 'fadeOut',
+        lazyLoad: true,
       })
 
 

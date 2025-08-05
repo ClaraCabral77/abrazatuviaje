@@ -3645,6 +3645,32 @@ margin-top: 100px;
   margin-top: 10px;
   font-style: italic;
 }
+@media (max-width: 768px) {
+  .custom-card .intro {
+    font-size: 0.8rem;
+  }
+  .custom-card .title {
+    font-size: 0.85rem;
+  }
+  .custom-card .footer-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Ajustes para pantallas chicas */
+@media (max-width: 480px) {
+  .custom-card .intro {
+    font-size: 0.7rem;
+  }
+  .custom-card .title {
+    font-size: 0.75rem;
+  }
+  .custom-card .footer-text {
+    font-size: 0.65rem;
+    margin-top: -20px;
+  }
+}
+
 
 .parrafoRegalo{
   margin: 60px 80px 80px 80px;

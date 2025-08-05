@@ -2469,6 +2469,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 50px;
 }
 
+
+  
 @media (max-width: 767px) {
   .active-works-carousel .owl-dots .owl-dot {
     margin: 0 15px;
@@ -2514,6 +2516,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 90%;
   top: 89%;
 }
+
+
+
 
 @media (max-width: 1024px) {
   .gallery-area .owl-controls {
@@ -3564,8 +3569,10 @@ margin-top: 100px;
 
 /* Card principal */
 .custom-card {
-  width: 620px;                 /* Ancho fijo */
-  height: auto;                 /* Ajusta altura según contenido */
+  width: 100%;
+  max-width: 620px;                 /* Ancho fijo */
+  height: auto;  
+  min-height: 400px;              /* Ajusta altura según contenido */
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -3575,15 +3582,27 @@ margin-top: 100px;
 
 /* Imagen dentro de la card */
 .custom-card img {
-  width: 100%;    /* Ajusta al ancho de la card */
-  height: auto;   /* Mantiene proporción */
-  display: block; /* Evita espacios debajo de la imagen */
+ width: 100%;   /* Máximo ancho igual al contenedor */
+  height: auto;
+  display: block;
 }
+@media (max-width: 768px) {
+  .custom-card .passport-img {
+    content: url("../img/pasaportesMovil.jpg");
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-card .passport-img {
+    content: url("../img/pasaportesMovil.jpg");
+  }
+}
+
 
 /* Contenido de texto sobre la imagen, centrado */
 .custom-card-content {
   position: absolute;
-  top: 15%;                    /* Separación desde arriba */
+  top: 10%;                    /* Separación desde arriba */
   left: 50%;
   transform: translateX(-50%);
   width: 65%;                  /* Margen a los lados */

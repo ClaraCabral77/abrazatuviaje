@@ -3271,7 +3271,7 @@ margin-top: 100px;
     #myFormB{
       padding-top: 5%;
       padding-left: 5%;
-      padding-bottom: 2%s;
+      padding-bottom: 2%;
       background-image: url("../img/fondoguia.jpg");
       background-repeat: no-repeat;
       background-size:cover;
@@ -3655,6 +3655,7 @@ margin-top: 100px;
   .custom-card .footer-text {
     font-size: 0.75rem;
   }
+  
 }
 
 /* Ajustes para pantallas chicas */
@@ -3662,6 +3663,7 @@ margin-top: 100px;
   .custom-card .intro {
     font-size: 0.7rem;
   }
+ 
   .custom-card .title {
     font-size: 0.75rem;
   }
@@ -3669,11 +3671,54 @@ margin-top: 100px;
     font-size: 0.65rem;
     margin-top: -20px;
   }
+
 }
 
 
 .parrafoRegalo{
   margin: 60px 80px 80px 80px;
+}
+
+
+
+@media (max-width: 768px) {
+.parrafoRegalo{
+margin: 50px 50px 70px 20px;
+}
+   #myFormB{
+      padding-top: 5%;
+      padding-left: 5%;
+      padding-bottom: 2%;
+      padding-right: 5%;
+      background-image: url("../img/fondoguia.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center 50%;
+      margin-bottom: 10px;
+
+}
+  
+}
+
+/* Ajustes para pantallas chicas */
+@media (max-width: 480px) {
+  .parrafoRegalo{
+    margin: 50px 50px 70px 20px;
+
+  }
+     #myFormB{
+      padding-top: 5%;
+      padding-left: 5%;
+      padding-bottom: 2%;
+           padding-right: 5%;
+      background-image: url("../img/fondoguia.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center 50%;
+      margin-bottom: 10px;
+
+}
+
 }
 
 #listaRegalo{

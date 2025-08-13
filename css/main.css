@@ -6,6 +6,14 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+
+
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #b01afe;
@@ -3737,4 +3745,649 @@ margin: 50px 50px 70px 20px;
   width: 80%;
   height: 60%;
 
+}
+/* seccion ventas */
+
+#campeche{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.text-center{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.frase-viaje {
+  font-family: 'Playfair Display', serif; /* o la que prefieras */
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #bfeb6e; /* línea de cita */
+  padding-left: 15px;
+  margin: 20px auto;
+margin-left: -20px;
+margin-top: 40px;
+  max-width: 700px;
+}
+
+.frase-viaje p {
+  margin: 8px 0;
+}
+
+.viaje-outline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.viaje-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 2000px;
+}
+
+.viaje-card:hover .viaje-inner {
+  transform: rotateY(180deg) translateZ(5px);
+}
+
+.viaje-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Frente y reverso */
+.viaje-front, .viaje-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Frente */
+.viaje-front {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Reverso */
+.viaje-back {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  transform: rotateY(-180deg);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.viaje-back img {
+  margin-top: 10px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.viaje-back h1, .viaje-back p {
+  margin: 10px 0;
+  letter-spacing: 0.05em;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+
+
+.video-section {
+  display: flex;
+  justify-content: center;  /* centra horizontal */
+  align-items: center;      /* centra vertical */
+  min-height: 500px;        /* ajusta altura según necesites */
+  text-align: center;       /* centra el texto dentro */
+}
+
+.porque-titulo {
+  color: #7952b3; /* color morado Bootstrap */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.porque-lista li {
+  margin-bottom: 15px; /* más espacio entre ítems */
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.porque-lista .destacado {
+  color: #ff7f50; /* coral */
+  font-weight: bold;
+}
+
+
+/* wrapper scope: evita afectar otras páginas */
+.carrusel-page-wrapper {
+  padding: 40px 16px;
+  background: transparent; /* o poné color si querés sólo para esta página */
+  box-sizing: border-box;
+}
+
+/* --- Video + título centrado (todo el bloque centrado) --- */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+.video-inner {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 16px;
+}
+
+/* responsive iframe (mantiene 16:9) */
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
+/* --- "Por qué viajar" estilos + espaciado y destacados --- */
+.porque-section {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+.porque-titulo {
+  color: #7952b3;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.porque-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 760px;
+}
+.porque-lista li {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* destacamos palabras clave con color y fondo ligero */
+.destacado {
+  color: #ff7f50;
+  font-weight: 700;
+  background: rgba(255,127,80,0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery222 {
+  --s: 150px; /* control the size */
+  display: grid;
+  grid: auto-flow var(--s) / repeat(2, var(--s));
+  gap: 10px;
+  place-items: center;
+  margin: calc(var(--s) / 2);
+  transform: rotate(45deg);
+}
+.gallery222 > img {
+  width: 141%; /* sqrt(2)*100% */
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(80%);
+  transform: scale(var(--_t, 1)) rotate(-45deg);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.gallery222 > img:hover {
+  filter: grayscale(0);
+  --_t: 1.15;
+}
+
+
+
+
+.dl-blurbs.campeche {
+  display: grid; /* mantenemos dos columnas como antes */
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+  /* si quieres mantener el fondo/gradiente original, no lo tocamos aquí */
+}
+
+/* móvil: una columna */
+@media (max-width: 768px) {
+  .dl-blurbs.campeche {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* limpiamos posibles reglas globales que hacían dt gigantes / numeración */
+.dl-blurbs.campeche dl {
+  margin: 0;
+  padding: 0;
+  background: transparent; /* evita gradientes superpuestos si los tenés */
+}
+
+/* Los items (dt) los hacemos legibles y compactos */
+.dl-blurbs.campeche dt {
+  font-size: 1rem;            /* tamaño razonable */
+  line-height: 1.4;
+  color: #333333;
+  font-weight: 600;
+  text-transform: none;      /* quitar mayúsculas si las tenía */
+  margin: 0 0 0.6rem 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(121,82,179,0.06); /* sutil fondo morado claro */
+  display: block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* quitar la numeración automática que existía globalmente */
+.dl-blurbs.campeche dt::before {
+  content: ""; /* anula el counter() global */
+  margin-left: 0;
+  padding-right: 0;
+}
+
+/* opcional: efecto hover para que no quede plano */
+.dl-blurbs.campeche dt:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: rgba(121,82,179,0.12);
+}
+
+/* Si por algún motivo tu layout incluye <dd> (descripciones), las mantenemos discretas */
+.dl-blurbs.campeche dd {
+  margin-left: 0;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Si querés, ajustá el color del check: */
+.dl-blurbs.campeche dt::marker, /* por compatibilidad */
+.dl-blurbs.campeche dt {
+  /* el emoji ✅ ya está dentro del texto; si quisieras usar pseudo-elemento
+     para el check en vez del texto, lo podríamos añadir aquí */
+}
+
+/* --- scope/estructura general --- */
+.galleriaBrz {
+  max-width: 800px;         /* ancho total de la galería */
+  margin: 20px auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* --- VISOR: reserva el espacio (proporción 3:2) --- */
+.galleriaBrz__viewer {
+  position: relative;
+  width: 100%;
+  padding-top: 66.6667%; /* 3:2 ratio -> 2/3 = 66.6667% */
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000; /* opcional: fondo mientras carga la imagen */
+}
+
+/* inputs (ocultos) */
+.galleriaBrz__selector {
+  position: absolute;
+  left: -9999px; /* fuera del flujo */
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* imágenes grandes: absolutas, llenan el visor, no afectan flujo */
+.galleriaBrz__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 8px;
+  will-change: opacity;
+}
+
+/* Mostrar la imagen correspondiente cuando su radio está checked */
+.galleriaBrz__selector:checked + .galleriaBrz__img {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* --- Miniaturas (fila inferior) --- */
+.galleriaBrz__thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* cada thumb */
+.galleriaBrz__thumb {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.galleriaBrz__thumb img {
+  width: 150px;           /* tamaño uniforme de mini */
+  height: 100px;          /* mantiene 3:2 */
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* hover en miniatura */
+.galleriaBrz__thumb img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* --- marcar la miniatura activa (necesario: selectors por id) --- */
+#img-1:checked ~ .galleriaBrz__thumbs label[for="img-1"] img,
+#img-2:checked ~ .galleriaBrz__thumbs label[for="img-2"] img,
+#img-3:checked ~ .galleriaBrz__thumbs label[for="img-3"] img,
+#img-4:checked ~ .galleriaBrz__thumbs label[for="img-4"] img {
+  box-shadow: 0 0 0 4px #0be2f6;
+  transform: scale(1.03);
+}
+
+/* --- Responsive: reducir miniaturas en pantallas chicas --- */
+@media (max-width: 520px) {
+  .galleriaBrz__thumb img {
+    width: 120px;
+    height: 80px;
+  }
+  .galleriaBrz { padding: 0 8px; }
+}
+.card-viajeras {
+  margin-top: 10%;      /* separación superior */
+  text-align: center;    /* centra el título y el párrafo */
+}
+
+.card-viajeras h2 {
+  margin-bottom: 15px;   /* separación entre título y texto */
+}
+
+.card-viajeras p {
+  max-width: 600px;      /* ancho máximo para que no se extienda demasiado */
+  margin: 0 auto;        /* centra horizontalmente */
+}
+
+/* Tabla incluye */
+.info-viaje {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 10%;
+}
+
+/* Título principal */
+.info-viaje__titulo {
+  margin-bottom: 8%;
+  margin-top: 15%;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+
+}
+
+/* Grid de dos columnas */
+.info-viaje__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Tarjetas */
+.info-card {
+background: linear-gradient(135deg, #ffecd2 30%, #87e9b0 70%);
+ border: 2px  rgba(0,0,0,0.1);
+
+padding: 20px;
+  border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15), 0 8px 25px rgba(0,0,0,0.2);
+
+  text-align: left;
+}
+
+.info-card h4 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: #2a36dd;
+font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  }
+
+.info-card ul {
+  padding-left: 20px;
+  line-height: 2;
+  color: #222222;
+}
+
+/* Responsive: 1 columna en móviles */
+@media (max-width: 768px) {
+  .info-viaje__grid {
+    grid-template-columns: 1fr;
+  }
+}
+#juntas{
+  width: 50%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* parte juntas */
+
+.card-body.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px; 
+  color:#19191b;
+
+}
+
+.card-body.text-center h2 {
+  margin-bottom: 5px;
+}
+
+.card-body.text-center p {
+  max-width: 600px; 
+  line-height: 1.4; 
+  margin-bottom: 8px;
+}
+
+#juntas {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px; 
+}
+#lista{
+  margin-top: 30px;
+  font-size: 45px;
+  
+}
+#medio{
+  line-height: 3;
+  font-size: 15px;
+  color: #191919;
+}
+
+
+.outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.flip-card {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.front {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+}
+
+.back {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.front h1 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.front p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #191919;
+}
+
+.back p {
+  font-size: 0.9rem;
+}
+.precio{
+  color:#2a36dd;
+  font-weight: bold;
+}
+
+.reserva-subtitulo {
+  margin-top: 15px; /* separación con el título */
+}
+
+.reserva-lista li {
+  margin-bottom: 12px; /* espacio entre ítems */
+  line-height: 1.5; /* interlineado más cómodo */
+}
+
+.btn {
+  white-space: normal;  /* Permite saltos de línea */
+  text-align: center;   /* Centra el texto */
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+    font-size: 1rem;     
+    padding: 10px 14px;  
+  }
+}
+
+.form-check {
+  padding-left: 0; 
+  display: flex;
+  align-items: center; 
+  gap: 6px; 
+}
+
+.form-check-input {
+  margin: 0; 
+  position: relative; 
+
+}
+@font-face {
+  font-family: 'TheFont';
+  src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2") format('woff2');
+}
+
+.breathe-animation {
+  /* Eliminamos height:100vh y centrado forzado */
+  display: block;
+  text-align: center;
+  margin: 1rem 0; /* espacio arriba y abajo */
+}
+
+.breathe-animation span {
+  font-family: 'TheFont';
+  font-size: clamp(2rem, 6vw, 5rem);
+  line-height: 2;
+  background: linear-gradient(90deg, #00a86b, #ffa500, #ff6347);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tropical-breathe 5s ease-in-out infinite, letter-breathe 3s ease-in-out infinite;
+}
+
+@keyframes letter-breathe {
+  from, to { font-variation-settings: 'wght' 100; }
+  50% { font-variation-settings: 'wght' 900; }
+}
+
+@keyframes tropical-breathe {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
